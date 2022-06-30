@@ -85,10 +85,10 @@ author:
   bio              : "Ph.D. Candidate in Computer Science"
   location         : "Newark, NJ"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=N9X7u2MAAAAJ&hl=en&oi=sra"
   email            :  
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Hadi-Ghahremannezhad"
   uri              :
   bitbucket        :
   codepen          :
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/hg20/"
+  linkedin         : "hg20/"
   orcid            : "http://orcid.org/0000-0003-2795-4464"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # https://stackoverflow.com/users/6129428/hadi-ghahremannezhad
+  stackoverflow    : "https://stackoverflow.com/users/6129428/hadi-ghahremannezhad"
   steam            :
   tumblr           :
-  twitter          : "https://twitter.com/ghahremannezhad"
+  twitter          : "ghahremannezhad"
   vine             :
   weibo            :
   xing             :
