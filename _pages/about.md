@@ -52,67 +52,29 @@ PhD candidate, Computer Science & Engineering
     align-items: center;
 }
 
-button{
-    width: 120px;
-    height: 40px;
-    border: none;
-    outline: none;
-    background: #2f2f2f;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 3px 10px -5px rgba(0,0,0,0.4);
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 2px 1px;
+a.button7{
+ display:inline-block;
+ padding:0.7em 1.7em;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.2em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:400;
+ color:#FFFFFF;
+ background-color:#3369ff;
+ box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+ text-align:center;
+ position:relative;
 }
-
-.check-box{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: 0 0 6px -2px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0;
-    right: -20px;
-    opacity: 0;
+a.button7:active{
+ box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
 }
-
-.check-box svg{
-    width: 20px;
-    margin: 10px;
-}
-
-svg path{
-    stroke-width: 3;
-    stroke: #fff;
-    stroke-dasharray: 34;
-    stroke-dashoffset: 34;
-    stroke-linecap: round;
-}
-
-.active{
-    background: #24D040;
-    transition: 1s;
-}
-
-.active .check-box{
-    right: 0;
-    opacity: 1;
-    transition: 1s;
-}
-
-.active p{
-    margin-right: 125px;
-    transition: 1s;
-}
-
-.active svg path{
-    stroke-dashoffset: 0;
-    transition: 1s;
-    transition-delay: 1s;
+@media all and (max-width:30em){
+ a.button7{
+  display:block;
+  margin:0.4em auto;
+ }
 }
 </style>
 
@@ -123,16 +85,8 @@ svg path{
       <label>Your email:</label>
       <input type="email" name="email" />
       <label>Your message:</label>
-      <input type="text" name="message" rows="3" maxlength="3000" style="height:150px;"/>
-      <button id="my-form-button">
-            <p id="btnText">Send message</p>
-            <div class="check-box">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 10 50 50">
-                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                </svg>
-            </div>
-      </button>
-      <!-- <button id="my-form-button">Submit</button> -->
+      <input type="text" name="message" rows="3" maxlength="3000" style="height:140px;"/>
+      <button id="my-form-button">Submit</button>
       <p id="my-form-status"></p>
     </form>
   </div>
@@ -150,13 +104,6 @@ svg path{
 <!-- Place this script at the end of the body tag -->
 <script>
     var form = document.getElementById("my-form");
-    const btn = document.querySelector("#my-form-button");
-    const btnText = document.querySelector("#btnText");
-  
-    btn.onclick = () => {
-      btnText.innerHTML = "Thanks";
-      btn.classList.add("active");
-    };
     
     async function handleSubmit(event) {
       event.preventDefault();
