@@ -45,7 +45,7 @@ PhD candidate, Computer Science & Engineering
 
 .container{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: #e3ebfe;
     display: flex;
     justify-content: center;
@@ -54,34 +54,34 @@ PhD candidate, Computer Science & Engineering
 
 button{
     width: 270px;
-    height: 80px;
+    height: 40px;
     border: none;
     outline: none;
     background: #2f2f2f;
     color: #fff;
     font-size: 22px;
-    border-radius: 40px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 10px -5px rgba(0,0,0,0.4);
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
 .check-box{
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px -2px rgba(0,0,0,0.5);
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -20px;
     opacity: 0;
 }
 
 .check-box svg{
-    width: 40px;
-    margin: 20px;
+    width: 20px;
+    margin: 10px;
 }
 
 svg path{
@@ -93,7 +93,7 @@ svg path{
 }
 
 .active{
-    background: #ff2b75;
+    background: #24D040;
     transition: 1s;
 }
 
@@ -149,6 +149,13 @@ svg path{
 <!-- Place this script at the end of the body tag -->
 <script>
     var form = document.getElementById("my-form");
+    const btn = document.querySelector("#my-form-button");
+    const btnText = document.querySelector("#btnText");
+  
+    btn.onclick = () => {
+        btnText.innerHTML = "Thanks";
+        btn.classList.add("active");
+    };
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -162,7 +169,7 @@ svg path{
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Will get back to you soon.";
           form.reset()
         } else {
           response.json().then(data => {
@@ -180,12 +187,4 @@ svg path{
     form.addEventListener("submit", handleSubmit)
 </script>
 
-<script type="text/javascript">
-        const btn = document.querySelector("#my-form-button");
-        const btnText = document.querySelector("#btnText");
 
-        btn.onclick = () => {
-            btnText.innerHTML = "Thanks";
-            btn.classList.add("active");
-        };
-</script>
