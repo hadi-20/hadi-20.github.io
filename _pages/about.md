@@ -33,25 +33,7 @@ PhD candidate, Computer Science & Engineering
   clear: both;
 }
   
-/* button */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    width: 100%;
-    height: 50vh;
-    background: #e3ebfe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
+/* button */  
 .pushable {
     position: relative;
     border: none;
@@ -98,7 +80,7 @@ PhD candidate, Computer Science & Engineering
     border-radius: 12px;
     font-size: 1.25rem;
     color: white;
-    background: hsl(345deg 100% 47%);
+    background: hsl(105deg 60% 40%);
     will-change: transform;
     transform: translateY(-4px);
     transition:
@@ -135,6 +117,9 @@ PhD candidate, Computer Science & Engineering
     outline: none;
   }
 </style>
+
+
+
 
 <div class="row">
   <div class="column">
