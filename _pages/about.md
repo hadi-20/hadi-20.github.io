@@ -119,12 +119,12 @@ svg path{
   <div class="column">
     <!-- modify this form HTML and place wherever you want your form -->
     <form id="my-form" action="https://formspree.io/f/xnqwyrwj" method="POST">
-      <label>Email:</label>
+      <label>Your email:</label>
       <input type="email" name="email" />
-      <label>Message:</label>
+      <label>Your message:</label>
       <input type="text" name="message" height="200" rows="3" maxlength="3000"/>
       <button id="my-form-button">
-            <p id="btnText">Submit</p>
+            <p id="btnText">Send message</p>
             <div class="check-box">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                     <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
