@@ -41,7 +41,7 @@ PhD candidate, Computer Science & Engineering
       <label>Email:</label>
       <input type="email" name="email" />
       <label>Message:</label>
-      <input type="text" name="message"/>
+      <input type="text" name="message"/ height="200">
       <button id="my-form-button">Submit</button>
       <p id="my-form-status"></p>
     </form>
