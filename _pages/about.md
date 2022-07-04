@@ -63,7 +63,7 @@ PhD candidate, Computer Science & Engineering
   <div class="column">
     <!-- modify this form HTML and place wherever you want your form -->
     <form id="my-form" action="https://formspree.io/f/xnqwyrwj" method="POST">
-      <label>Your email:</label>
+      <label>Your email address:</label>
       <input type="email" name="email" />
       <label>Your message:</label>
       <input type="text" name="message" rows="3" maxlength="3000" style="height:140px;"/>
