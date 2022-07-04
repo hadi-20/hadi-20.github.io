@@ -67,10 +67,10 @@ PhD candidate, Computer Science & Engineering
     border-radius: 12px;
     background: linear-gradient(
       to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
+      hsl(105deg 60% 16%) 0%,
+      hsl(105deg 60% 32%) 8%,
+      hsl(105deg 60% 32%) 92%,
+      hsl(105deg 60% 16%) 100%
     );
   }
   .front {
@@ -78,7 +78,7 @@ PhD candidate, Computer Science & Engineering
     position: relative;
     padding: 12px 42px;
     border-radius: 12px;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     color: white;
     background: hsl(105deg 60% 40%);
     will-change: transform;
