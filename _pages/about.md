@@ -123,7 +123,7 @@ svg path{
       <label>Your email:</label>
       <input type="email" name="email" />
       <label>Your message:</label>
-      <input type="text" name="message" rows="3" maxlength="3000" style="height:200px;"/>
+      <input type="text" name="message" rows="3" maxlength="3000" style="height:150px;"/>
       <button id="my-form-button">
             <p id="btnText">Send message</p>
             <div class="check-box">
