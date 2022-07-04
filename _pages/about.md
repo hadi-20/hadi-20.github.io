@@ -66,6 +66,8 @@ button{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    
+    margin: 2px 1px;
 }
 
 .check-box{
