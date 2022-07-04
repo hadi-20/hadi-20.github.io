@@ -76,9 +76,9 @@ PhD candidate, Computer Science & Engineering
   .front {
     display: block;
     position: relative;
-    padding: 12px 42px;
+    padding: 6px 21px;
     border-radius: 12px;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: white;
     background: hsl(105deg 60% 40%);
     will-change: transform;
