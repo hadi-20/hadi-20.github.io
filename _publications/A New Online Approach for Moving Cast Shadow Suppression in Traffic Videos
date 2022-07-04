@@ -1,0 +1,18 @@
+---
+title: "A New Online Approach for Moving Cast Shadow Suppression in Traffic Videos"
+collection: publications
+permalink: /publication/2009-10-01-paper-title-number-1
+excerpt: 'In applications of traffic video analysis, moving vehicles can induce cast shadows that have negative impacts on the system performance. Here, a new online cast shadow removal method is proposed which integrates pixel-based, region-based, and statistical modeling techniques to detect shadows. Specifically, the global foreground modeling(GFM) method is first applied in order to segment the moving objects along with their cast shadows from the stationary background. The potential shadow pixels are identified by considering the physics-based properties of reflection and comparing the changes in color values in the corresponding background and foreground locations in terms of brightness and chromaticity. A new region-based shadow detection method is proposed using an illumination invariant feature as the input to the k-means clustering method in order to partition each foreground component into separate segments. Each segment is classified into object and shadow based on its portion of potential shadows, the amount of gradient information introduced, and the number of extrinsic terminal points contained. Afterward, the background and foreground values in the RGB and HSV color-spaces are utilized to construct six-dimensional feature vectors which are modeled by a mixture of Gaussian distributions to classify the foreground pixels into shadows and objects. Lastly, the results of the previous steps are integrated for final shadow detection. Experiments using public video data ‘Highway-1’ and ‘Highway-3’, and real traffic video data provided by the New Jersey Department of Transportation (NJDOT) demonstrate the effectiveness of the proposed method.'
+date: 2020-10-01
+venue: 'IEEE International Intelligent Transportation Systems Conference (ITSC)'
+paperurl: '(https://github.com/hadi-ghnd/hadi-ghnd.github.io/tree/master/files/shadow1.pdf)'
+citation: '@inproceedings{ghahremannezhad2021new,
+  title={A New Online Approach for Moving Cast Shadow Suppression in Traffic Videos},
+  author={Ghahremannezhad, Hadi and Shi, Hang and Liu, Chengjun},
+  booktitle={2021 IEEE International Intelligent Transportation Systems Conference (ITSC)},
+  pages={3034--3039},
+  year={2021},
+  organization={IEEE}
+}'
+---
+
