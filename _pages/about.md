@@ -51,31 +51,6 @@ PhD candidate, Computer Science & Engineering
     justify-content: center;
     align-items: center;
 }
-
-a.button7{
- display:inline-block;
- padding:0.7em 1.7em;
- margin:0 0.3em 0.3em 0;
- border-radius:0.2em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:400;
- color:#FFFFFF;
- background-color:#3369ff;
- box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
- text-align:center;
- position:relative;
-}
-a.button7:active{
- box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-@media all and (max-width:30em){
- a.button7{
-  display:block;
-  margin:0.4em auto;
- }
-}
 </style>
 
 <div class="row">
@@ -86,7 +61,7 @@ a.button7:active{
       <input type="email" name="email" />
       <label>Your message:</label>
       <input type="text" name="message" rows="3" maxlength="3000" style="height:140px;"/>
-      <button id="my-form-button" class="button7" style="background-color:#CCCCCC; color:#000000">send message</button>
+      <button id="my-form-button">send message</button>
       <p id="my-form-status"></p>
     </form>
   </div>
