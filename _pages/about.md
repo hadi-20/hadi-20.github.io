@@ -13,24 +13,64 @@ PhD candidate, Computer Science & Engineering
 
 ### Contact
 
-<form
-  action="https://formspree.io/f/xnqwyrwj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+<!-- modify this form HTML and place wherever you want your form -->
+<form id="my-form" action="https://formspree.io/f/xnqwyrwj" method="POST">
+  <label>Email:</label>
+  <input type="email" name="email" style="width: 200px;" />
+  <label>Message:</label>
+  <input type="text" name="message" style="width: 200px;"/>
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
 </form>
 
 
+
+
+
 <div class="google-maps">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12091.578127255476!2d-74.1793225!3d40.7423462!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb97c287a2ef95f43!2sNew%20Jersey%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1637423286669!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12091.578127255476!2d-74.1793225!3d40.7423462!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb97c287a2ef95f43!2sNew%20Jersey%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1637423286669!5m2!1sen!2sus" width="50%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
   </iframe>    
 </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Place this script at the end of the body tag -->
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
