@@ -126,9 +126,9 @@ PhD candidate, Computer Science & Engineering
     <!-- modify this form HTML and place wherever you want your form -->
     <form id="my-form" action="https://formspree.io/f/xnqwyrwj" method="POST">
       <label>Your email address:</label>
-      <input type="email" name="email" />
+      <input type="email" name="email" placeholder="Your email address.."/>
       <label>Your message:</label>
-      <input type="text" name="message" rows="3" maxlength="3000" style="height:140px;"/>
+      <input type="text" name="message" placeholder="Your message.." rows="3" maxlength="3000" style="height:140px;"/>
       
       <button id="my-form-button" class="pushable">
         <span class="shadow"></span>
