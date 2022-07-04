@@ -11,7 +11,7 @@ redirect_from:
 PhD candidate, Computer Science & Engineering
 
 
-### <u>Contact</u>
+### Contact
 
 <style>
 * {
