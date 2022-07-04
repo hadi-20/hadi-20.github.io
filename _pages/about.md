@@ -51,6 +51,12 @@ PhD candidate, Computer Science & Engineering
     justify-content: center;
     align-items: center;
 }
+  
+.button {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
 </style>
 
 <div class="row">
@@ -61,7 +67,7 @@ PhD candidate, Computer Science & Engineering
       <input type="email" name="email" />
       <label>Your message:</label>
       <input type="text" name="message" rows="3" maxlength="3000" style="height:140px;"/>
-      <button id="my-form-button">send message</button>
+      <button id="my-form-button" class = "button"> send message </button>
       <p id="my-form-status"></p>
     </form>
   </div>
