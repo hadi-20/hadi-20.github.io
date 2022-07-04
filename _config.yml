@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hadi Ghahremannezhad"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Hadi Ghahremannezhad"
 description              : &description "Ph.D. Candidate in Computer Science"
