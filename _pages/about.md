@@ -53,7 +53,7 @@ PhD candidate, Computer Science & Engineering
 }
 
 button{
-    width: 270px;
+    width: 120px;
     height: 40px;
     border: none;
     outline: none;
@@ -122,11 +122,11 @@ svg path{
       <label>Your email:</label>
       <input type="email" name="email" />
       <label>Your message:</label>
-      <input type="text" name="message" height="200" rows="3" maxlength="3000"/>
+      <input type="text" name="message" rows="3" maxlength="3000" style="height:200px;"/>
       <button id="my-form-button">
             <p id="btnText">Send message</p>
             <div class="check-box">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 10 50 50">
                     <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                 </svg>
             </div>
@@ -152,10 +152,7 @@ svg path{
     const btn = document.querySelector("#my-form-button");
     const btnText = document.querySelector("#btnText");
   
-    btn.onclick = () => {
-        btnText.innerHTML = "Thanks";
-        btn.classList.add("active");
-    };
+    
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -169,6 +166,10 @@ svg path{
         }
       }).then(response => {
         if (response.ok) {
+          btn.onclick = () => {
+          btnText.innerHTML = "Thanks";
+          btn.classList.add("active");
+          };
           status.innerHTML = "Will get back to you soon.";
           form.reset()
         } else {
