@@ -59,14 +59,13 @@ button{
     outline: none;
     background: #2f2f2f;
     color: #fff;
-    font-size: 22px;
+    font-size: 14px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 3px 10px -5px rgba(0,0,0,0.4);
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    
     margin: 2px 1px;
 }
 
@@ -154,7 +153,10 @@ svg path{
     const btn = document.querySelector("#my-form-button");
     const btnText = document.querySelector("#btnText");
   
-    
+    btn.onclick = () => {
+      btnText.innerHTML = "Thanks";
+      btn.classList.add("active");
+    };
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -168,10 +170,6 @@ svg path{
         }
       }).then(response => {
         if (response.ok) {
-          btn.onclick = () => {
-          btnText.innerHTML = "Thanks";
-          btn.classList.add("active");
-          };
           status.innerHTML = "Will get back to you soon.";
           form.reset()
         } else {
