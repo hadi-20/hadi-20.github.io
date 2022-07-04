@@ -86,7 +86,7 @@ a.button7:active{
       <input type="email" name="email" />
       <label>Your message:</label>
       <input type="text" name="message" rows="3" maxlength="3000" style="height:140px;"/>
-      <button id="my-form-button">Submit</button>
+      <button id="my-form-button" class="button7" style="background-color:#CCCCCC; color:#000000">send message</button>
       <p id="my-form-status"></p>
     </form>
   </div>
