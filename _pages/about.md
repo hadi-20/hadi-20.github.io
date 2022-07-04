@@ -128,7 +128,7 @@ PhD candidate, Computer Science & Engineering
       <label>Your email address:</label>
       <input type="email" name="email" />
       <label>Your message:</label>
-      <textarea name="message" rows="3" cols="10" wrap="soft"></textarea>
+      <textarea name="message" rows="4" cols="10" wrap="soft"></textarea>
       
       <button id="my-form-button" class="pushable">
         <span class="shadow"></span>
@@ -169,7 +169,7 @@ PhD candidate, Computer Science & Engineering
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Will get back to you soon.";
+          status.innerHTML = "Thanks, will get back to you soon.";
           form.reset()
         } else {
           response.json().then(data => {
