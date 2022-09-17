@@ -14,8 +14,7 @@ My research interests are Machine Learning and Software Development. I have been
 
 <br />
 <br />
-<br />
-<br />
+
 
 ### Contact
 
