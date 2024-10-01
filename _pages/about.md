@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-PhD candidate, Computer Science & Engineering
+Computer Science & Engineering
 
 My research interests are Machine Learning and Software Development. I have been researching video analytics systems for embedded devices, image processing using deep learning, and graphic applications for mobile devices.
 
